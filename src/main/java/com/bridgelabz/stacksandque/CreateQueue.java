@@ -1,6 +1,6 @@
 package com.bridgelabz.stacksandque;
 
-public class PeakAndPopStack {
+public class CreateQueue {
 	 Node top;
 	    Node next;
 
@@ -25,7 +25,6 @@ public class PeakAndPopStack {
 	    }
 
 	    public int peek() {
-
 	        if (!isEmpty()) {
 	            return top.data;
 	        }
@@ -43,13 +42,12 @@ public class PeakAndPopStack {
 	            top = top.next;
 	            System.out.println("one item removed from stack...");
 	        }
-
 	        System.out.println("now stack is empty :: ");
 	    }
 
 	    public void printStack() {
-	        Node node = top;
 
+	        Node node = top;
 	        while (node != null) {
 	            System.out.println(node.data);
 	            node = node.next;
@@ -58,7 +56,7 @@ public class PeakAndPopStack {
 	    }
 
 	    public static void main(String[] args) {
-	        PeakAndPopStack stackoperation = new PeakAndPopStack();
+	        CreateQueue stackoperation = new CreateQueue();
 
 	        stackoperation.push(70);
 	        stackoperation.push(30);
@@ -68,5 +66,4 @@ public class PeakAndPopStack {
 	        stackoperation.printStack();
 
 	    }
-
 }
